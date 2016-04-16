@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E4E2B72E-EAB7-75C7-6A02-A0DE3AAD15B5" name="SP16_ProjEmp">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>DD1B084D-3DFD-7FE1-F79E-53A0C4188A61</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="personID" id="DBB37A75-364C-4DAD-1A6C-336B4DE67E40">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>EA858087-5CBE-0114-47D9-7DB328EDA7EC</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="35B18B40-F131-5A0B-5260-73B0FEEAB2B5" referredColumn="36C8ADFE-FDE2-9189-5D65-0F8936B9BFC2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C245852D-8C2E-1DE8-ED0A-1B99373ED406" name="SP16_ProjEmp_PK">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>0A078237-F8D1-C794-8FBA-F70BC92DC5D8</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBB37A75-364C-4DAD-1A6C-336B4DE67E40"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7740C22F-B87D-E3BA-8B59-3300C3ADE951" name="SP16_ProjEmp_SP16_Emp_FK">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>1E3F2210-4875-ED9F-067D-B2B14E030C6C</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBB37A75-364C-4DAD-1A6C-336B4DE67E40"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="982A6660-2ECC-7DB7-4892-0DB076F94624" name="SP16_R7v1">
+<createdBy>Adan</createdBy>
+<createdTime>2016-04-13 00:03:53 UTC</createdTime>
+<generatorID>FBE0962E-52B5-EE4A-2521-A44751EB6B39</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="56C50162-7EC6-E4A4-0938-8EDD7F1DBF5F" name="SP16_PrevEmp">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>9CD93303-7AD8-B64D-AB18-20AF33FE35DB</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="personID" id="0F2313A3-CD6B-880B-5EAE-2D741176D051">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>EA858087-5CBE-0114-47D9-7DB328EDA7EC</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FD76EC22-4333-CD63-F958-7A2D6B764293" referredColumn="5B63B56A-B23E-6196-5E7E-2D2A4D330424"/>
+</associations>
+</Column>
+<Column name="isFired" id="59C5EA64-7FE9-6C24-0AA3-B8C30A604EF6">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>33B328FD-9E06-2524-B060-763559A69A1A</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sal" id="860DA9F4-C604-A309-A193-12DF3B45EFE6">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>38B56F89-D992-2664-3C63-3823FA07745E</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7F6C6B3D-2E4F-954C-7807-8BBE952408DB" name="SP16_PrevEmp_PK">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>0A078237-F8D1-C794-8FBA-F70BC92DC5D8</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F2313A3-CD6B-880B-5EAE-2D741176D051"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1F44B4BF-A99D-4FEA-0AAD-1F2F03CF2C09" name="SP16_PrevEmp_SP16_Person_FK">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>A2016DF8-9BC9-BEB3-1692-3DE0F374AB7C</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F2313A3-CD6B-880B-5EAE-2D741176D051"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

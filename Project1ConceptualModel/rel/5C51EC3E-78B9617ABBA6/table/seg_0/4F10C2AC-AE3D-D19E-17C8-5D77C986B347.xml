@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4F10C2AC-AE3D-D19E-17C8-5D77C986B347" name="SP16_PrevProj">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>2A793F99-8AB0-7C3B-7143-8841E780B207</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="projNo" id="43503EBA-44D8-82AA-8A94-04E8E23D6C0F">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>7A8931A3-6B26-921F-625E-1A1B96FA388B</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B9512BAF-8B8F-3736-B959-5F9D58019DE2" referredColumn="44E03791-B7D6-BFEC-1CB8-4518B2931379"/>
+</associations>
+</Column>
+<Column name="endDate" id="A9826219-7916-3243-9702-9B0F16E2D5F3">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>3EBAD560-81B1-4813-DE76-AD11A58052E9</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estHours" id="629AA378-0FA5-D4E2-5D2D-B3F0F1090EFA">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>582610E1-1C7A-32E5-B467-3BCF45180661</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A37B8CEB-7064-0D10-FB05-0F9D6BADB37E" name="SP16_PrevProj_PK">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>3453BECC-1CF6-18ED-D683-937962490220</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43503EBA-44D8-82AA-8A94-04E8E23D6C0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D92BABD8-ABFB-CCEA-CA9B-3692F5D638C1" name="SP16_PrevProj_SP16_Proj_FK">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>4C6BEB90-0D4C-25D5-93BC-1A09AF2B5C91</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43503EBA-44D8-82AA-8A94-04E8E23D6C0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="868B41C9-6E81-9380-530F-E29AA485AF8E" name="SP16_InterimMgr">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>D3E9F4B8-FF6A-248D-8844-C0E52AFB2A29</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="personID" id="D619ED88-B49A-233A-C383-B415C80C3BF2">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>EA858087-5CBE-0114-47D9-7DB328EDA7EC</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EF31950D-7E03-E26F-0A71-1551F1D3799F" referredColumn="77D5FE55-1A69-BA3F-DF1B-1657D4136CA7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="42AEEFC9-1ACD-8860-A75F-00301AFE5CDC" name="SP16_InterimMgr_PK">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>0A078237-F8D1-C794-8FBA-F70BC92DC5D8</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D619ED88-B49A-233A-C383-B415C80C3BF2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D64CC280-856B-8543-9B5B-2BB389BC9034" name="SP16_InterimMgr_SP16_Mgr_FK">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>EE2F6F78-4153-C9C1-E9EF-0CFF82ADBCE6</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D619ED88-B49A-233A-C383-B415C80C3BF2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="352AF0B4-1534-784D-1455-0242C5C0AADB" name="SP16_Mgr">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>F6146D42-90EE-F26A-63DD-767906DDBC78</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="personID" id="77D5FE55-1A69-BA3F-DF1B-1657D4136CA7">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>EA858087-5CBE-0114-47D9-7DB328EDA7EC</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1CBABF39-1E1A-0781-0405-CB19B0FD366D" referredColumn="36C8ADFE-FDE2-9189-5D65-0F8936B9BFC2"/>
+</associations>
+</Column>
+<Column name="bonus" id="07299E52-37F4-8331-1018-1C7C1DA33BB7">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>4C4A9CF8-6F82-CC57-C641-07EB52B7DBBA</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4CF3BE20-E9C4-A9F5-1CFB-23CFF3F8CD9F" name="SP16_Mgr_PK">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>0A078237-F8D1-C794-8FBA-F70BC92DC5D8</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77D5FE55-1A69-BA3F-DF1B-1657D4136CA7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E4E75DB6-151E-F432-3568-AE5FEFCA445F" name="SP16_Mgr_SP16_Emp_FK">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>9B65E706-3B02-C5F7-4F3F-B4FC914FA15D</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77D5FE55-1A69-BA3F-DF1B-1657D4136CA7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

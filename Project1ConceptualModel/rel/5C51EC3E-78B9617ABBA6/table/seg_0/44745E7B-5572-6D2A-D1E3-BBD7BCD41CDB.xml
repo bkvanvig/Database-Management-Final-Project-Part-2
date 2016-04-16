@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="44745E7B-5572-6D2A-D1E3-BBD7BCD41CDB" name="SP16_Proj">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>44A3FB02-94FA-F376-09B7-E45E8EE6A682</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="projNo" id="44E03791-B7D6-BFEC-1CB8-4518B2931379">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>7A8931A3-6B26-921F-625E-1A1B96FA388B</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="projTitle" id="4BFB9444-DF52-FF09-DD07-F76DFBD36464">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>E8E411BD-1EF8-F03D-3006-640D00E6BD3C</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SP16_Proj_projNo" id="158AEE00-1059-62A2-CB91-94121DEEF7C7">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>58071455-6234-97C8-647B-66A93FF3A006</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="33F21503-EBE1-EDF9-C200-B15E36F3CA81" referredColumn="44E03791-B7D6-BFEC-1CB8-4518B2931379"/>
+</associations>
+</Column>
+<Column name="SP16_Dept_deptNo" id="8DAE7B47-D74C-4C4A-68A9-33EB4E1E57CC">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>F1F9A1B7-AC0D-D44D-1917-C787BEBB6E43</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A732311D-A6D5-51EC-8EB7-4E424D11BF85" referredColumn="70DB5152-B89C-F870-A2D9-56BC2780629E"/>
+</associations>
+</Column>
+<Column name="empID" id="F0D8BEBF-B898-49C1-E170-21BEA306AFBF">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>AB584857-73F7-4DEC-0936-1DFE2A0D9E15</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SP16_Mgr_personID" id="A35686D3-592E-1C07-7AC7-3D5E011F4FB7">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:41:54 UTC</createdTime>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C02F212A-2381-4A3E-4D08-AEF3634D6751" referredColumn="77D5FE55-1A69-BA3F-DF1B-1657D4136CA7"/>
+</associations>
+</Column>
+<Column name="type" id="0E258D2B-D583-AFF5-81F4-91200AB97AC3">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 06:10:18 UTC</createdTime>
+<generatorID>18183C63-3A8F-6DCA-2413-1052595490E6</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="55C326CF-E86E-45EA-677C-BA552815F753" name="SP16_Proj_PK">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>3453BECC-1CF6-18ED-D683-937962490220</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="44E03791-B7D6-BFEC-1CB8-4518B2931379"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A5D66F84-AD64-D102-3E10-38626C7AE7AC" name="SP16_Proj_SP16_Mgr_FK">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>FC753787-2DF2-F069-EDF6-7B344BC8C48F</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A35686D3-592E-1C07-7AC7-3D5E011F4FB7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ED2D0DBD-7EEA-CA31-F5A0-7E7072C09A8A" name="SP16_Proj_SP16_Dept_FK">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>B0758F4A-ED4F-3A84-F098-3F725F240586</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DAE7B47-D74C-4C4A-68A9-33EB4E1E57CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="54209B7F-3083-7505-07A8-56A668D3BF6A" name="SP16_Proj_SP16_Proj_FK">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>050C6BAC-55A1-8D45-D48F-70DEC16CCD7F</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="158AEE00-1059-62A2-CB91-94121DEEF7C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

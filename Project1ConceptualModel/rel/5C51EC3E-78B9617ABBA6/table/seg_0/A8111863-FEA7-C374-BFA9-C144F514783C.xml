@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A8111863-FEA7-C374-BFA9-C144F514783C" name="SP16_Emp">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>DADB0854-E734-A391-4FED-03B60083C6AF</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="personID" id="36C8ADFE-FDE2-9189-5D65-0F8936B9BFC2">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>EA858087-5CBE-0114-47D9-7DB328EDA7EC</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="70B6E70E-3096-12E0-56AF-3D9556F8B296" referredColumn="5B63B56A-B23E-6196-5E7E-2D2A4D330424"/>
+</associations>
+</Column>
+<Column name="empID" id="594F470C-9731-DC5A-7A40-3AB0F811968C">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>B19BE6BC-A4CC-70F0-8110-4510649743FA</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sal" id="C79E3888-5013-0E62-CED4-DF19743F144D">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>7BEAE01C-2A4A-7A75-2C33-17CE32098CA3</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="salException" id="2AB2509F-516A-808F-E0C2-520E6D8974A2">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>5D885C62-AA8C-5A91-BFE6-E83265247F6A</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="empID1" id="2B90F0F9-D137-FCB6-84D0-289ADB295D6F">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>8ED92FAC-BE2A-5E9B-7557-D2209D11CD1B</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SP16_Mgr_personID" id="55A20274-4669-833F-AE15-9DC8ADB6ADA8">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:41:54 UTC</createdTime>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AC2B31A8-11FF-8CD8-3E08-8481FF23E35B" referredColumn="77D5FE55-1A69-BA3F-DF1B-1657D4136CA7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5C412B46-1A53-066B-9960-FC6C0A72932D" name="SP16_Emp_PK">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>0A078237-F8D1-C794-8FBA-F70BC92DC5D8</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36C8ADFE-FDE2-9189-5D65-0F8936B9BFC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7AFFEE0B-6243-40E4-244A-7BFDFD5478CB" name="SP16_Emp_PKv1">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>7DC2198E-30A7-903B-6DF2-4043A62DA8FC</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="594F470C-9731-DC5A-7A40-3AB0F811968C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A914869-1ED0-64C2-AFA5-63858EE3D6C7" name="SP16_Emp_SP16_Person_FK">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>CA0D9B73-D796-CD15-D406-E9905E469996</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36C8ADFE-FDE2-9189-5D65-0F8936B9BFC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DAD75E3B-3C32-5E26-DC23-423D53FBFB7D" name="SP16_Emp_SP16_Mgr_FK">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 04:12:47 UTC</createdTime>
+<generatorID>588927AC-FEDD-F676-8001-84B66DA6054D</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55A20274-4669-833F-AE15-9DC8ADB6ADA8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="458A3A3D-2804-F6AA-22F1-63AE3F95FF01" name="SP16_R2v1">
+<createdBy>Adan</createdBy>
+<createdTime>2016-04-13 00:03:53 UTC</createdTime>
+<generatorID>C04322DC-30C5-3850-FDBE-8C160E168B82</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

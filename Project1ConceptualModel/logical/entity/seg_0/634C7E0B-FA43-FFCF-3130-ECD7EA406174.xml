@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="634C7E0B-FA43-FFCF-3130-ECD7EA406174" name="SP16_Dept">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 03:41:05 UTC</createdTime>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<engineerTo>
+<item key="5C51EC3E-B602-DA08-9283-78B9617ABBA6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="deptNo" id="C83CD26E-64F2-F914-3DAA-9DE72E651EAD">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 03:41:12 UTC</createdTime>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<engineerTo>
+<item key="5C51EC3E-B602-DA08-9283-78B9617ABBA6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="deptName" id="6E004CDE-D91B-E44A-940A-20CFFB81B830">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 03:41:29 UTC</createdTime>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<engineerTo>
+<item key="5C51EC3E-B602-DA08-9283-78B9617ABBA6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="empID" id="1787B5F4-0F20-AF69-5501-9882A2524750">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 03:47:17 UTC</createdTime>
+<generatorID>28854BCB-1CB3-44CC-B0FD-AEE87417FFC5</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<engineerTo>
+<item key="5C51EC3E-B602-DA08-9283-78B9617ABBA6" value="true"/>
+</engineerTo>
+<referedAttribute>B19BE6BC-A4CC-70F0-8110-4510649743FA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6CB420DA-160D-F5B1-8294-62F854DD5614" name="SP16_Dept PK">
+<createdBy>Adan</createdBy>
+<createdTime>2016-03-30 03:41:23 UTC</createdTime>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5C51EC3E-B602-DA08-9283-78B9617ABBA6" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C83CD26E-64F2-F914-3DAA-9DE72E651EAD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

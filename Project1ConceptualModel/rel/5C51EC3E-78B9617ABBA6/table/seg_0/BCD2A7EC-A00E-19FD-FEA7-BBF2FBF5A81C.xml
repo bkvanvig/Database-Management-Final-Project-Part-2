@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BCD2A7EC-A00E-19FD-FEA7-BBF2FBF5A81C" name="SP16_R7">
+<createdBy>Adan</createdBy>
+<createdTime>2016-04-13 00:03:53 UTC</createdTime>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SP16_ProjEmp_personID" id="B5D93687-DBA3-0A37-8FC2-D9ECAF6F343D">
+<createdBy>Adan</createdBy>
+<createdTime>2016-04-13 00:03:53 UTC</createdTime>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="96FBD97D-3E45-836A-0F0B-EB090B7E193B" referredColumn="DBB37A75-364C-4DAD-1A6C-336B4DE67E40"/>
+</associations>
+</Column>
+<Column name="SP16_CurrProj_projNo" id="5BA87892-04A3-FC74-02B0-CAB204B6DD66">
+<createdBy>Adan</createdBy>
+<createdTime>2016-04-13 00:03:53 UTC</createdTime>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8A96F640-6B6D-5A59-9B11-71923990737D" referredColumn="CB1A9323-267A-5896-7EE4-B7FC73BA4053"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8B2F3BC1-435D-C22F-3367-79B2112CF05E" name="SP16_R7_PK">
+<createdBy>Adan</createdBy>
+<createdTime>2016-04-13 00:03:53 UTC</createdTime>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5D93687-DBA3-0A37-8FC2-D9ECAF6F343D"/>
+<colUsage columnID="5BA87892-04A3-FC74-02B0-CAB204B6DD66"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="959E2D92-F5B1-CA7F-FEC8-E81C73289990" name="FK_ASS_5">
+<createdBy>Adan</createdBy>
+<createdTime>2016-04-13 00:03:53 UTC</createdTime>
+<generatorID>FBE0962E-52B5-EE4A-2521-A44751EB6B39</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5D93687-DBA3-0A37-8FC2-D9ECAF6F343D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6C4CE5B7-DB69-162A-1450-D8F41D2C0582" name="FK_ASS_6">
+<createdBy>Adan</createdBy>
+<createdTime>2016-04-13 00:03:53 UTC</createdTime>
+<generatorID>FBE0962E-52B5-EE4A-2521-A44751EB6B39</generatorID>
+<ownerDesignName>Project1ConceptualModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5BA87892-04A3-FC74-02B0-CAB204B6DD66"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
