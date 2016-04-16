@@ -1,0 +1,344 @@
+drop view SP16_PrevEmp_view ;
+drop view SP16_Emp_view ;
+drop view SP16_ProjEmp_view ;
+drop view SP16_Mgr_view ;
+drop view SP16_InterimMgr_view ;
+drop view SP16_Pres_view ;
+
+drop view SP16_PrevProj_view ;
+drop view SP16_CurrProj_view ;
+
+create view SP16_PrevEmp_view as
+SELECT 
+    personID,
+    type,
+    firstName,
+    lastName,
+    homeAddress,
+    zipCode,
+    homePhone,
+    usCitizen,
+    isFired,
+    sal
+FROM SP16_Person where type = 'Previous Employee' ;
+
+create or replace TRIGGER SP16_PrevEmp_trigger
+     INSTEAD OF insert ON SP16_PrevEmp_view
+     FOR EACH ROW
+BEGIN
+    insert into SP16_Person( 
+        personID,
+        type,
+        firstName,
+        lastName,
+        homeAddress,
+        zipCode,
+        homePhone,
+        usCitizen,
+        isFired,
+        sal)
+    VALUES ( 
+        :NEW.personID,
+        'Previous Employee',
+        :NEW.firstName,
+        :NEW.lastName,
+        :NEW.homeAddress,
+        :NEW.zipCode,
+        :NEW.homePhone,
+        :NEW.usCitizen,
+        :NEW.isFired,
+        0) ;
+END;
+/
+
+create view SP16_Emp_view as
+SELECT 
+    personID,
+    type,
+    firstName,
+    lastName,
+    homeAddress,
+    zipCode,
+    homePhone,
+    usCitizen,
+    empID,
+    sal,
+    salException
+FROM SP16_Person where type = 'Employee' ;
+
+create or replace TRIGGER SP16_Emp_trigger
+     INSTEAD OF insert ON SP16_Emp_view
+     FOR EACH ROW
+BEGIN
+    insert into SP16_Person( 
+        personID,
+        type,
+        firstName,
+        lastName,
+        homeAddress,
+        zipCode,
+        homePhone,
+        usCitizen,
+        empID,
+        sal,
+        salException)
+    VALUES ( 
+        :NEW.personID,
+        'Employee',
+        :NEW.firstName,
+        :NEW.lastName,
+        :NEW.homeAddress,
+        :NEW.zipCode,
+        :NEW.homePhone,
+        :NEW.usCitizen,
+        :NEW.empID,
+        :NEW.sal,
+        :NEW.salException) ;
+END;
+/
+
+create view SP16_ProjEmp_view as
+SELECT 
+    personID,
+    type,
+    firstName,
+    lastName,
+    homeAddress,
+    zipCode,
+    homePhone,
+    usCitizen,
+    empID,
+    sal,
+    salException
+FROM SP16_Person where type = 'Project Employee' ;
+
+create or replace TRIGGER SP16_ProjEmp_trigger
+     INSTEAD OF insert ON SP16_ProjEmp_view
+     FOR EACH ROW
+BEGIN
+    insert into SP16_Person( 
+        personID,
+        type,
+        firstName,
+        lastName,
+        homeAddress,
+        zipCode,
+        homePhone,
+        usCitizen,
+        empID,
+        sal,
+        salException)
+    VALUES ( 
+        :NEW.personID,
+        'Project Employee',
+        :NEW.firstName,
+        :NEW.lastName,
+        :NEW.homeAddress,
+        :NEW.zipCode,
+        :NEW.homePhone,
+        :NEW.usCitizen,
+        :NEW.empID,
+        :NEW.sal,
+        :NEW.salException) ;
+END;
+/
+
+create view SP16_Mgr_view as
+SELECT 
+    personID,
+    type,
+    firstName,
+    lastName,
+    homeAddress,
+    zipCode,
+    homePhone,
+    usCitizen,
+    empID,
+    sal,
+    salException,
+    bonus
+FROM SP16_Person where type = 'Manager' ;
+
+create or replace TRIGGER SP16_Mgr_trigger
+     INSTEAD OF insert ON SP16_Mgr_view
+     FOR EACH ROW
+BEGIN
+    insert into SP16_Person( 
+        personID,
+        type,
+        firstName,
+        lastName,
+        homeAddress,
+        zipCode,
+        homePhone,
+        usCitizen,
+        empID,
+        sal,
+        salException,
+        bonus)
+    VALUES ( 
+        :NEW.personID,
+        'Manager',
+        :NEW.firstName,
+        :NEW.lastName,
+        :NEW.homeAddress,
+        :NEW.zipCode,
+        :NEW.homePhone,
+        :NEW.usCitizen,
+        :NEW.empID,
+        :NEW.sal,
+        :NEW.salException,
+        :NEW.bonus) ;
+END;
+/
+
+create view SP16_InterimMgr_view as
+SELECT 
+    personID,
+    type,
+    firstName,
+    lastName,
+    homeAddress,
+    zipCode,
+    homePhone,
+    usCitizen,
+    empID,
+    sal,
+    salException,
+    bonus
+FROM SP16_Person where type = 'Interim Manager' ;
+
+create or replace TRIGGER SP16_InterimMgr_trigger
+     INSTEAD OF insert ON SP16_InterimMgr_view
+     FOR EACH ROW
+BEGIN
+    insert into SP16_Person( 
+        personID,
+        type,
+        firstName,
+        lastName,
+        homeAddress,
+        zipCode,
+        homePhone,
+        usCitizen,
+        empID,
+        sal,
+        salException,
+        bonus)
+    VALUES ( 
+        :NEW.personID,
+        'Interim Manager',
+        :NEW.firstName,
+        :NEW.lastName,
+        :NEW.homeAddress,
+        :NEW.zipCode,
+        :NEW.homePhone,
+        :NEW.usCitizen,
+        :NEW.empID,
+        :NEW.sal,
+        :NEW.salException,
+        :NEW.bonus) ;
+END;
+/
+
+create view SP16_Pres_view as
+SELECT 
+    personID,
+    type,
+    firstName,
+    lastName,
+    homeAddress,
+    zipCode,
+    homePhone,
+    usCitizen,
+    empID,
+    sal,
+    salException,
+    bonus
+FROM SP16_Person where type = 'President' ;
+
+create or replace TRIGGER SP16_Pres_trigger
+     INSTEAD OF insert ON SP16_Pres_view
+     FOR EACH ROW
+BEGIN
+    insert into SP16_Person( 
+        personID,
+        type,
+        firstName,
+        lastName,
+        homeAddress,
+        zipCode,
+        homePhone,
+        usCitizen,
+        empID,
+        sal,
+        salException,
+        bonus)
+    VALUES ( 
+        :NEW.personID,
+        'President',
+        :NEW.firstName,
+        :NEW.lastName,
+        :NEW.homeAddress,
+        :NEW.zipCode,
+        :NEW.homePhone,
+        :NEW.usCitizen,
+        :NEW.empID,
+        :NEW.sal,
+        :NEW.salException,
+        :NEW.bonus) ;
+END;
+/
+
+create view SP16_PrevProj_view as
+SELECT 
+    projNo,
+    type,
+    projTitle,
+    endDate,
+    estHours
+FROM SP16_Proj where type = 'Previous Project' ;
+
+create or replace TRIGGER SP16_PrevProj_trigger
+     INSTEAD OF insert ON SP16_PrevProj_view
+     FOR EACH ROW
+BEGIN
+    insert into SP16_Proj( 
+        projNo,
+        type,
+        projTitle,
+        endDate,
+        estHours)
+    VALUES ( 
+        :NEW.projNo,
+        'Previous Project',
+        :NEW.projTitle,
+        :NEW.endDate,
+        :NEW.estHours) ;
+END;
+/
+
+create view SP16_CurrProj_view as
+SELECT 
+    projNo,
+    type,
+    projTitle,
+    projActive
+FROM SP16_Proj where type = 'Current Project' ;
+
+create or replace TRIGGER SP16_CurrProj_trigger
+     INSTEAD OF insert ON SP16_CurrProj_view
+     FOR EACH ROW
+BEGIN
+    insert into SP16_Proj( 
+        projNo,
+        type,
+        projTitle,
+        projActive)
+    VALUES ( 
+        :NEW.projNo,
+        'Current Project',
+        :NEW.projTitle,
+        :NEW.projActive) ;
+END;
+/

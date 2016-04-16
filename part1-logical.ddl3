@@ -1,0 +1,180 @@
+DROP SEQUENCE SP16_Dept_seq ; 
+create sequence SP16_Dept_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger SP16_Dept_PK_trig 
+before insert on SP16_Dept
+for each row 
+begin 
+select SP16_Dept_seq.nextval into :new.deptNo from dual; 
+end; 
+/
+alter table SP16_Dept add created date ; 
+alter table SP16_Dept add created_by VARCHAR2 (255) ; 
+alter table SP16_Dept add row_version_number integer ; 
+alter table SP16_Dept add updated date ; 
+alter table SP16_Dept add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger SP16_Dept_AUD_trig 
+before insert or update on SP16_Dept 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE SP16_Person_seq ; 
+create sequence SP16_Person_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger SP16_Person_PK_trig 
+before insert on SP16_Person
+for each row 
+begin 
+select SP16_Person_seq.nextval into :new.personID from dual; 
+end; 
+/
+alter table SP16_Person add created date ; 
+alter table SP16_Person add created_by VARCHAR2 (255) ; 
+alter table SP16_Person add row_version_number integer ; 
+alter table SP16_Person add updated date ; 
+alter table SP16_Person add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger SP16_Person_AUD_trig 
+before insert or update on SP16_Person 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE SP16_Proj_seq ; 
+create sequence SP16_Proj_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger SP16_Proj_PK_trig 
+before insert on SP16_Proj
+for each row 
+begin 
+select SP16_Proj_seq.nextval into :new.projNo from dual; 
+end; 
+/
+alter table SP16_Proj add created date ; 
+alter table SP16_Proj add created_by VARCHAR2 (255) ; 
+alter table SP16_Proj add row_version_number integer ; 
+alter table SP16_Proj add updated date ; 
+alter table SP16_Proj add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger SP16_Proj_AUD_trig 
+before insert or update on SP16_Proj 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+-- Table SP16_R2 has a compound primary key so no sequence or trigger was created for it.
+-- Table SP16_R7 has a compound primary key so no sequence or trigger was created for it.
+DROP SEQUENCE SP16_p2p_seq ; 
+create sequence SP16_p2p_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger SP16_p2p_PK_trig 
+before insert on SP16_p2p
+for each row 
+begin 
+select SP16_p2p_seq.nextval into :new.SP16_p2p_ID from dual; 
+end; 
+/
+alter table SP16_p2p add created date ; 
+alter table SP16_p2p add created_by VARCHAR2 (255) ; 
+alter table SP16_p2p add row_version_number integer ; 
+alter table SP16_p2p add updated date ; 
+alter table SP16_p2p add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger SP16_p2p_AUD_trig 
+before insert or update on SP16_p2p 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP INDEX SP16_Person_personID_FK_0 ;
+CREATE INDEX SP16_Person_personID_FK_0 ON SP16_R2(SP16_Person_personID) ;
+DROP INDEX SP16_Proj_projNo_FK_1 ;
+CREATE INDEX SP16_Proj_projNo_FK_1 ON SP16_R2(SP16_Proj_projNo) ;
+DROP INDEX SP16_Person_personID_FK_2 ;
+CREATE INDEX SP16_Person_personID_FK_2 ON SP16_R7(SP16_Person_personID) ;
+DROP INDEX SP16_Proj_projNo_FK_3 ;
+CREATE INDEX SP16_Proj_projNo_FK_3 ON SP16_R7(SP16_Proj_projNo) ;
+DROP INDEX SP16_Person_personID_FK_4 ;
+CREATE INDEX SP16_Person_personID_FK_4 ON SP16_Dept(SP16_Person_personID) ;
+DROP INDEX SP16_Proj_projNo_FK_5 ;
+CREATE INDEX SP16_Proj_projNo_FK_5 ON SP16_Person(SP16_Proj_projNo) ;
+DROP INDEX SP16_p2p_SP16_p2p_ID_FK_6 ;
+CREATE INDEX SP16_p2p_SP16_p2p_ID_FK_6 ON SP16_Person(SP16_p2p_SP16_p2p_ID) ;
+DROP INDEX SP16_Dept_deptNo_FK_7 ;
+CREATE INDEX SP16_Dept_deptNo_FK_7 ON SP16_Proj(SP16_Dept_deptNo) ;
+DROP INDEX SP16_Proj_projNo_FK_8 ;
+CREATE INDEX SP16_Proj_projNo_FK_8 ON SP16_Proj(SP16_Proj_projNo) ;
