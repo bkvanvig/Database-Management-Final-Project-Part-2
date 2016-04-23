@@ -2,15 +2,20 @@
 --   at:        2016-04-07 16:42:57 CDT
 --   site:      Oracle Database 12c
 --   type:      Oracle Database 12c
-
-
+drop table SP16_Dept CASCADE CONSTRAINTS;
+drop table SP16_Person CASCADE CONSTRAINTS;
+drop table SP16_p2p CASCADE CONSTRAINTS;
+drop table SP16_Proj CASCADE CONSTRAINTS;
+drop table SP16_R2 ;
+drop table SP16_R7 ;
+drop SEQUENCE SP16_p2p_SP16_p2p_ID_SEQ ;
 
 
 CREATE TABLE SP16_Dept
   (
     deptNo               INTEGER NOT NULL ,
     deptName             VARCHAR2 (255) NOT NULL ,
-    SP16_Person_personID INTEGER NOT NULL
+    SP16_Person_personID INTEGER
   ) ;
 ALTER TABLE SP16_Dept ADD CONSTRAINT SP16_Dept_PK PRIMARY KEY ( deptNo ) ;
 
@@ -29,7 +34,7 @@ CREATE TABLE SP16_Person
     salException         NUMBER ,
     isFired              NUMBER ,
     bonus                INTEGER ,
-    SP16_Proj_projNo     INTEGER NOT NULL ,
+    SP16_Proj_projNo     INTEGER,
     SP16_p2p_SP16_p2p_ID NUMBER ,
     usCitizen            NUMBER
   ) ;
@@ -46,7 +51,7 @@ CREATE TABLE SP16_Proj
     estHours         INTEGER ,
     SP16_Dept_deptNo INTEGER ,
     projNo1          INTEGER ,
-    SP16_Proj_projNo INTEGER NOT NULL
+    SP16_Proj_projNo INTEGER
   ) ;
 ALTER TABLE SP16_Proj ADD CONSTRAINT SP16_Proj_PK PRIMARY KEY ( projNo ) ;
 
