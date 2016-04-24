@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8B007C2E-EE52-01E6-5785-17F21A298927" name="SP16_Dept">
+<createdBy>brittkvanvig</createdBy>
+<createdTime>2016-04-24 17:40:52 UTC</createdTime>
+<generatorID>4EEF3DB8-CE18-DCDB-5FF7-293343D4C1D5</generatorID>
+<ownerDesignName>logical424</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="deptNo" id="551C0900-A1B3-7F15-8959-309EE791A0FE">
+<createdBy>brittkvanvig</createdBy>
+<createdTime>2016-04-24 17:40:52 UTC</createdTime>
+<generatorID>6732983D-1C6D-F389-C864-FAF3A52FE3CD</generatorID>
+<ownerDesignName>logical424</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="deptName" id="BA99AA21-52CF-70C2-41A8-0CC30B01FB6A">
+<createdBy>brittkvanvig</createdBy>
+<createdTime>2016-04-24 17:40:52 UTC</createdTime>
+<generatorID>48F31AA7-D8C2-6738-ACE1-208B8E61A6AE</generatorID>
+<ownerDesignName>logical424</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="746BAC00-90A2-A51D-154E-33E02BA4A417" name="SP16_Dept_PK">
+<createdBy>brittkvanvig</createdBy>
+<createdTime>2016-04-24 17:40:52 UTC</createdTime>
+<generatorID>BD804B08-0722-5A60-9F39-CA10BAFEAC81</generatorID>
+<ownerDesignName>logical424</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="551C0900-A1B3-7F15-8959-309EE791A0FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9C79C3C6-332E-6D19-D41A-174929C5585B" name="project_departmentv1">
+<createdBy>brittkvanvig</createdBy>
+<createdTime>2016-04-24 17:40:52 UTC</createdTime>
+<generatorID>60623D71-9FA2-4E2B-DB46-A9C4B9A216E5</generatorID>
+<ownerDesignName>logical424</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>
