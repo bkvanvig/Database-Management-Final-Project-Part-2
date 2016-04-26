@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4EEF3DB8-CE18-DCDB-5FF7-293343D4C1D5" name="SP16_Dept">
 <createdBy>brittkvanvig</createdBy>
 <createdTime>2016-04-23 21:54:00 UTC</createdTime>
-<ownerDesignName>workinglogicalmodel</ownerDesignName>
+<ownerDesignName>logical424</ownerDesignName>
 <engineerTo>
 <item key="374F9E2D-B560-8F55-C095-0CF172DDE887" value="true"/>
 </engineerTo>
@@ -18,7 +18,7 @@
 <Attribute name="deptNo" id="6732983D-1C6D-F389-C864-FAF3A52FE3CD">
 <createdBy>brittkvanvig</createdBy>
 <createdTime>2016-04-23 21:54:14 UTC</createdTime>
-<ownerDesignName>workinglogicalmodel</ownerDesignName>
+<ownerDesignName>logical424</ownerDesignName>
 <engineerTo>
 <item key="374F9E2D-B560-8F55-C095-0CF172DDE887" value="true"/>
 </engineerTo>
@@ -30,7 +30,7 @@
 <Attribute name="deptName" id="48F31AA7-D8C2-6738-ACE1-208B8E61A6AE">
 <createdBy>brittkvanvig</createdBy>
 <createdTime>2016-04-23 21:54:25 UTC</createdTime>
-<ownerDesignName>workinglogicalmodel</ownerDesignName>
+<ownerDesignName>logical424</ownerDesignName>
 <engineerTo>
 <item key="374F9E2D-B560-8F55-C095-0CF172DDE887" value="true"/>
 </engineerTo>
@@ -45,7 +45,7 @@
 <identifier id="BD804B08-0722-5A60-9F39-CA10BAFEAC81" name="SP16_Dept PK">
 <createdBy>brittkvanvig</createdBy>
 <createdTime>2016-04-23 21:54:24 UTC</createdTime>
-<ownerDesignName>workinglogicalmodel</ownerDesignName>
+<ownerDesignName>logical424</ownerDesignName>
 <shouldEngineer>false</shouldEngineer>
 <engineerTo>
 <item key="374F9E2D-B560-8F55-C095-0CF172DDE887" value="false"/>

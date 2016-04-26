@@ -45,9 +45,9 @@
 <colUsage columnID="551C0900-A1B3-7F15-8959-309EE791A0FE"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9C79C3C6-332E-6D19-D41A-174929C5585B" name="project_departmentv1">
+<ind_PK_UK id="EECDE78F-C171-4967-38A9-9EF55785AA52" name="project_departmentv1">
 <createdBy>brittkvanvig</createdBy>
-<createdTime>2016-04-24 17:40:52 UTC</createdTime>
+<createdTime>2016-04-24 21:50:15 UTC</createdTime>
 <generatorID>60623D71-9FA2-4E2B-DB46-A9C4B9A216E5</generatorID>
 <ownerDesignName>logical424</ownerDesignName>
 <indexState>Foreign Key</indexState>

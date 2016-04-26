@@ -1,14 +1,14 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B630D104-C07A-F508-992A-AF3AAA0CD6F5" containerWithKeyObject="304F39BA-A354-43B5-307E-F50BF76877C0" localFKIndex="BB8FB994-D46B-1114-F594-543CDE975B19" name="FK_ASS_87">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="73CF08F8-2F6E-01EA-AE58-CC9F204030B0" containerWithKeyObject="8B007C2E-EE52-01E6-5785-17F21A298927" localFKIndex="EECDE78F-C171-4967-38A9-9EF55785AA52" name="project_departmentv1">
 <createdBy>brittkvanvig</createdBy>
-<createdTime>2016-04-24 17:40:52 UTC</createdTime>
-<generatorID>B9D7B7AB-8D27-3E85-D1ED-FEF2DEA0E9C8</generatorID>
+<createdTime>2016-04-24 21:50:15 UTC</createdTime>
+<generatorID>60623D71-9FA2-4E2B-DB46-A9C4B9A216E5</generatorID>
 <ownerDesignName>logical424</ownerDesignName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>C8D9994A-F1D3-B79C-6F94-47B1E23A728B</referredTableID>
 <keyObject>2D277CCE-9AE9-25C1-500A-085DD6CAC54C</keyObject>
 <referredKeyID>2D277CCE-9AE9-25C1-500A-085DD6CAC54C</referredKeyID>
-<mandatory>true</mandatory>
+<mandatory>false</mandatory>
 <transferable>true</transferable>
 <rely>false</rely>
 <columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>

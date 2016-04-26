@@ -66,7 +66,7 @@
 <colUsage columnID="76F17238-46B4-4FBA-8D1E-8E6462649437"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9DFC7825-B641-83E2-502F-3B5418D56E43" name="SP16_p2p_SP16_Person_FKv1">
+<ind_PK_UK id="9DFC7825-B641-83E2-502F-3B5418D56E43" name="SP16_p2p_SP16_Person_FKv2">
 <createdBy>brittkvanvig</createdBy>
 <createdTime>2016-04-24 17:40:52 UTC</createdTime>
 <generatorID>041F540D-D4A6-43F6-DEBC-22F99F37AE4B</generatorID>

@@ -2,7 +2,7 @@
 <Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="p2p2" directorySegmentName="seg_0" id="041F540D-D4A6-43F6-DEBC-22F99F37AE4B">
 <createdBy>brittkvanvig</createdBy>
 <createdTime>2016-04-23 22:40:26 UTC</createdTime>
-<ownerDesignName>workinglogicalmodel</ownerDesignName>
+<ownerDesignName>logical424</ownerDesignName>
 <engineerTo>
 <item key="374F9E2D-B560-8F55-C095-0CF172DDE887" value="true"/>
 </engineerTo>

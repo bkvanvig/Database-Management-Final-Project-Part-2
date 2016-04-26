@@ -65,8 +65,9 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="estHours" id="2AC52667-7453-42DA-68D4-10FFF137DA7F">
@@ -109,9 +110,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="A729407C-D6C6-288F-B25D-1FF4D5621C78" referredColumn="D59FBBDF-2AE9-8D3E-85E6-92B8151D3A04"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -138,33 +136,6 @@
 <colUsage columnID="79977E03-EE18-BF75-8A28-7C5F5A4C2CCA"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="C4A1192F-0905-CF53-2F9A-E2ED7AFF2B5E" name="project_department">
-<createdBy>brittkvanvig</createdBy>
-<createdTime>2016-04-24 17:40:52 UTC</createdTime>
-<generatorID>60623D71-9FA2-4E2B-DB46-A9C4B9A216E5</generatorID>
-<ownerDesignName>logical424</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-</ind_PK_UK>
-<ind_PK_UK id="45406CAA-FA35-1139-D575-5901244C9087" name="SP16_Proj_SP16_Person_FK">
-<createdBy>brittkvanvig</createdBy>
-<createdTime>2016-04-24 17:40:52 UTC</createdTime>
-<generatorID>3F4523CA-416F-1717-3E22-3FF1FEFAB031</generatorID>
-<ownerDesignName>logical424</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="79977E03-EE18-BF75-8A28-7C5F5A4C2CCA"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="D7788D13-4789-1E78-6EC6-22DF11A0EFCE" name="project_membersv1">
-<createdBy>brittkvanvig</createdBy>
-<createdTime>2016-04-24 17:40:52 UTC</createdTime>
-<generatorID>B9D7B7AB-8D27-3E85-D1ED-FEF2DEA0E9C8</generatorID>
-<ownerDesignName>logical424</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-</ind_PK_UK>
 <ind_PK_UK id="156C0F34-42C5-98F3-D737-A2AD596332AF" name="SP16_Proj_SP16_Proj_FK">
 <createdBy>brittkvanvig</createdBy>
 <createdTime>2016-04-24 17:40:52 UTC</createdTime>
@@ -175,6 +146,22 @@
 <indexColumnUsage>
 <colUsage columnID="FBDD5D96-25E5-E459-503E-C935EB9075D0"/>
 </indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D6B85151-34DD-C062-5082-FA6367DEB7C2" name="project_department">
+<createdBy>brittkvanvig</createdBy>
+<createdTime>2016-04-24 21:50:15 UTC</createdTime>
+<generatorID>60623D71-9FA2-4E2B-DB46-A9C4B9A216E5</generatorID>
+<ownerDesignName>logical424</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="A98046FB-B58E-A163-91D4-24DD5F1B309C" name="project_membersv1">
+<createdBy>brittkvanvig</createdBy>
+<createdTime>2016-04-24 21:50:15 UTC</createdTime>
+<generatorID>B9D7B7AB-8D27-3E85-D1ED-FEF2DEA0E9C8</generatorID>
+<ownerDesignName>logical424</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
 </ind_PK_UK>
 </indexes>
 </Table>

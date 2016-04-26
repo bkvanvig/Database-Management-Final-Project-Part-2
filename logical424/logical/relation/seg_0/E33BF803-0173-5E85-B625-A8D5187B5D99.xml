@@ -2,7 +2,7 @@
 <Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="subprojects" directorySegmentName="seg_0" id="E33BF803-0173-5E85-B625-A8D5187B5D99">
 <createdBy>brittkvanvig</createdBy>
 <createdTime>2016-04-23 23:10:31 UTC</createdTime>
-<ownerDesignName>workinglogicalmodel</ownerDesignName>
+<ownerDesignName>logical424</ownerDesignName>
 <engineerTo>
 <item key="374F9E2D-B560-8F55-C095-0CF172DDE887" value="true"/>
 </engineerTo>
