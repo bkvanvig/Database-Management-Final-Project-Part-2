@@ -1,0 +1,93 @@
+DELETE FROM SP16_p2p;
+DELETE FROM SP16_Proj;
+DELETE FROM SP16_Person;
+DELETE FROM SP16_Dept;
+
+
+alter trigger SP16_Dept_PK_trig disable;
+alter trigger Sp16_Dept_AUD_trig disable;
+alter trigger SP16_Person_Pk_trig disable;
+alter trigger SP16_Person_AUD_trig disable;
+alter trigger SP16_Proj_PK_trig disable;
+alter trigger SP16_Proj_AUD_trig disable;
+
+-- Put all of the sample data INSERT statements here. Be sure to use PK and FK values that
+-- are < 100 so that they won't be reapeated by the PK triggers when they are re-enabled.
+
+
+
+-- INSERT Dept
+INSERT INTO SP16_DEPT(deptNo, deptName)
+Values('501', 'Purchasing');
+INSERT INTO SP16_DEPT(deptNo, deptName)
+Values('502', 'Sales');
+INSERT INTO SP16_DEPT(deptNo, deptName)
+Values('503', 'Marketing');
+INSERT INTO SP16_DEPT(deptNo, deptName)
+Values('504','R&D');
+INSERT INTO SP16_DEPT(deptNo, deptName)
+Values('505','Accounting');
+
+--INSERT PERSON()
+
+
+INSERT INTO SP16_PERSON(personID, firstName, lastName, homeAddress,zipCode, homePhone, type, empID,sal,salException,isFired,bonus,usCitizen,deptNo,projNo,personID1)
+VALUES('1','Bill','Dawer','432 Hill Rd','78705','7891903','Interim Manager','101','70200','0','0','10000','1','','','');
+
+INSERT INTO SP16_PERSON(personID, firstName, lastName, homeAddress,zipCode, homePhone, type, empID,sal,salException,isFired,bonus,usCitizen,deptNo,projNo,personID1)
+VALUES('2','Diane','Wall','32 Cannon Dr','78705','7891903','Project Employee','102','80210','0','0','0','1','','','');
+
+INSERT INTO SP16_PERSON(personID, firstName, lastName, homeAddress,zipCode, homePhone, type, empID,sal,salException,isFired,bonus,usCitizen,deptNo,projNo,personID1)
+VALUES('3','Jennifer','Brown','35 palm lane','73014','2360884','Proejct Employee','103','80210','1','','','1','','','');
+
+INSERT INTO SP16_PERSON(personID, firstName, lastName, homeAddress,zipCode, homePhone, type, empID,sal,salException,isFired,bonus,usCitizen,deptNo,projNo,personID1)
+VALUES('4','Alice','Dawer','432 Hill Rd','78021','6541658','Previous Employee','104','50500','0','1','0','0','','','');
+
+INSERT INTO SP16_PERSON(personID, firstName, lastName, homeAddress,zipCode, homePhone, type, empID,sal,salException,isFired,bonus,usCitizen,deptNo,projNo,personID1)
+VALUES('5','George','Layton','347 Nueces St','78705','8798798','Employee','105','70201','0','','','1','','','');
+
+
+INSERT INTO SP16_PERSON(personID, firstName, lastName, homeAddress,zipCode, homePhone, type, empID,sal,salException,isFired,bonus,usCitizen,deptNo,projNo,personID1)
+VALUES('6','Susan','Petro','323 Country Lane','73421','6541238','Project Employee','106','70210','','','','1','','','');
+
+INSERT INTO SP16_PERSON(personID, firstName, lastName, homeAddress,zipCode, homePhone, type, empID,sal,salException,isFired,bonus,usCitizen,deptNo,projNo,personID1)
+VALUES('7','Steven','Williams','3 Seton St','78705','8798712','Manager','107','70210','','','1000','1','','','');
+
+INSERT INTO SP16_PERSON(personID, firstName, lastName, homeAddress,zipCode, homePhone, type, empID,sal,salException,isFired,bonus,usCitizen,deptNo,projNo,personID1)
+VALUES('8','Henry','Silverstone','100 Gates St.','70007','4565404','President','108','570201','1','0','20000','1','502','','');
+
+INSERT INTO SP16_PERSON(personID, firstName, lastName, homeAddress,zipCode, homePhone, type, empID,sal,salException,isFired,bonus,usCitizen,deptNo,projNo,personID1)
+VALUES('9','Mike','Dawer','432 Hill Rd','78705','7891903','','102','80210','0','','1000','1','','','');
+
+--INSERT Project( project-no:= 701 ,project-title := "Mission Impossible")
+INSERT INTO SP16_PROJ(projNo,projTitle,type,ProjActive,endDate,estHours,projNo1,personID,deptNo)
+VALUES('701','Mission Impossible','Current Project', '1','','','','7','502');
+
+INSERT INTO SP16_PROJ(projNo,projTitle,type,ProjActive,endDate,estHours,projNo1,personID,deptNo)
+VALUES('702','CodeRed','Previous Project', '0','01-Jun-1999','2000','','','504');
+
+INSERT INTO SP16_PROJ(projNo,projTitle,type,ProjActive,endDate,estHours,projNo1,personID,deptNo)
+VALUES('703','Desert Rose','Previous Project','0','03-May-1997','1300','702','','504');
+
+INSERT INTO SP16_PROJ(projNo,projTitle,type,ProjActive,endDate,estHours,projNo1,personID,deptNo)
+VALUES('704','Hallo','Current Project', '0','','','','','504');
+
+INSERT INTO SP16_PROJ(projNo,projTitle,type,ProjActive,endDate,estHours,projNo1,personID,deptNo)
+VALUES('705','Stick and Fly', 'Current Project', '1','','','702','3','504');
+
+INSERT INTO SP16_PROJ(projNo,projTitle,type,ProjActive,endDate,estHours,projNo1,personID,deptNo)
+VALUES('706','Night Rider','Current Project', '1','','','702','','502');
+
+--p2p
+INSERT INTO SP16_p2p(type,personID1,personID)
+Values('Spouse','1','4');
+
+INSERT INTO SP16_p2p(type,personID1,personID)
+VALUES('Parent-Child','4','9');
+
+alter trigger SP16_Dept_PK_trig enable;
+alter trigger Sp16_Dept_AUD_trig enable;
+alter trigger SP16_Person_Pk_trig enable;
+alter trigger SP16_Person_AUD_trig enable;
+alter trigger SP16_Proj_PK_trig enable;
+alter trigger SP16_Proj_AUD_trig enable;

@@ -1,0 +1,200 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="95793F67-1550-74BF-7EFE-EE2AF99F0259" name="SP16_Proj">
+<createdBy>brittkvanvig</createdBy>
+<createdTime>2016-04-26 00:49:23 UTC</createdTime>
+<generatorID>03F85967-5610-0DBC-4CC6-3A1EAC27F904</generatorID>
+<ownerDesignName>logical424</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="projNo" id="F22489E8-838E-1101-9309-CA80077381A1">
+<createdBy>brittkvanvig</createdBy>
+<createdTime>2016-04-26 00:49:23 UTC</createdTime>
+<generatorID>9F38F01A-A63C-8382-690A-189BEB542FF3</generatorID>
+<ownerDesignName>logical424</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="projTitle" id="AA0CA6CE-3283-F8CA-1723-EF5247C7B53F">
+<createdBy>brittkvanvig</createdBy>
+<createdTime>2016-04-26 00:49:23 UTC</createdTime>
+<generatorID>28BB1C22-3FB9-0A41-6EEC-64A9130B861C</generatorID>
+<ownerDesignName>logical424</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="7AD032B4-599E-2484-6099-1CBF6E651899">
+<createdBy>brittkvanvig</createdBy>
+<createdTime>2016-04-26 00:49:23 UTC</createdTime>
+<generatorID>3CE5BCAC-35FF-70BD-641E-855E4EF0A700</generatorID>
+<ownerDesignName>logical424</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ProjActive" id="3A732936-F576-DA0B-3835-03BA08B4A195">
+<createdBy>brittkvanvig</createdBy>
+<createdTime>2016-04-26 00:49:23 UTC</createdTime>
+<generatorID>7D61BA07-BD7F-1C3A-BDC7-362441057179</generatorID>
+<ownerDesignName>logical424</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="endDate" id="724210E7-7B11-F070-390B-BDC6094A9DBE">
+<createdBy>brittkvanvig</createdBy>
+<createdTime>2016-04-26 00:49:23 UTC</createdTime>
+<generatorID>F49830EC-7037-E9EF-F88B-C0DB47AC0305</generatorID>
+<ownerDesignName>logical424</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estHours" id="8833E867-5D4A-8B5F-494F-8BA03CB4A6E9">
+<createdBy>brittkvanvig</createdBy>
+<createdTime>2016-04-26 00:49:23 UTC</createdTime>
+<generatorID>8377EBCA-F3B5-7D33-80E0-106E84A78302</generatorID>
+<ownerDesignName>logical424</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="personID" id="B332A13C-EFB3-E914-9DBB-E98EDCF1525F">
+<createdBy>brittkvanvig</createdBy>
+<createdTime>2016-04-26 00:49:23 UTC</createdTime>
+<generatorID>D515AF43-D82A-FC78-CC99-75F66BB0442F</generatorID>
+<ownerDesignName>logical424</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3A477372-DBFC-3E5D-E366-566A834AFB57" referredColumn="F0556DD0-091E-B2C8-527C-23CA373D3822"/>
+</associations>
+</Column>
+<Column name="deptNo" id="E428BC29-75BA-2015-CF92-EFA76B45C012">
+<createdBy>brittkvanvig</createdBy>
+<createdTime>2016-04-26 00:49:23 UTC</createdTime>
+<generatorID>1255A3CD-5A61-8281-197D-52D9F71D912E</generatorID>
+<ownerDesignName>logical424</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5C4A5B33-DE79-B8E4-B845-186DBA91D8FE" referredColumn="46114F99-0ECA-E653-835B-ED8ED6D9BE4D"/>
+</associations>
+</Column>
+<Column name="projNo1" id="480DC9E5-591C-C515-058A-74979A408FF6">
+<createdBy>brittkvanvig</createdBy>
+<createdTime>2016-04-26 00:49:23 UTC</createdTime>
+<generatorID>3C03007B-B6A1-F894-5654-9832FE829B04</generatorID>
+<ownerDesignName>logical424</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D96FFCFB-4049-2F2D-5C89-FFD59F0B0532" referredColumn="F22489E8-838E-1101-9309-CA80077381A1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="82C4C11B-D0C9-2C78-A107-6D2027A56C46" name="SP16_Proj_PK">
+<createdBy>brittkvanvig</createdBy>
+<createdTime>2016-04-26 00:49:23 UTC</createdTime>
+<generatorID>270AA524-56A9-6DA6-F03E-E8307AE5EE17</generatorID>
+<ownerDesignName>logical424</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F22489E8-838E-1101-9309-CA80077381A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CAE57D3C-2428-EA07-8B60-C41B28068ADD" name="SP16_Proj__IDX">
+<createdBy>brittkvanvig</createdBy>
+<createdTime>2016-04-26 00:49:23 UTC</createdTime>
+<ownerDesignName>logical424</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>3F4523CA-416F-1717-3E22-3FF1FEFAB031</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="B332A13C-EFB3-E914-9DBB-E98EDCF1525F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7AF09CEC-BE07-6F80-DB64-525F94B14857" name="SP16_Proj_SP16_Dept_FK">
+<createdBy>brittkvanvig</createdBy>
+<createdTime>2016-04-26 00:49:23 UTC</createdTime>
+<generatorID>C8F74EB3-066E-D1B1-8DF7-6F2714D6F146</generatorID>
+<ownerDesignName>logical424</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E428BC29-75BA-2015-CF92-EFA76B45C012"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="014CFCE6-DCFB-2A2B-7899-FC93E79C2F0F" name="SP16_Proj_SP16_Person_FK">
+<createdBy>brittkvanvig</createdBy>
+<createdTime>2016-04-26 00:49:23 UTC</createdTime>
+<generatorID>3F4523CA-416F-1717-3E22-3FF1FEFAB031</generatorID>
+<ownerDesignName>logical424</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B332A13C-EFB3-E914-9DBB-E98EDCF1525F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E109BF75-270A-CC44-40C4-76783E82B2E4" name="project_membersv1">
+<createdBy>brittkvanvig</createdBy>
+<createdTime>2016-04-26 00:49:23 UTC</createdTime>
+<generatorID>B9D7B7AB-8D27-3E85-D1ED-FEF2DEA0E9C8</generatorID>
+<ownerDesignName>logical424</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="CD39012B-5733-7843-8746-4781ED3949E2" name="SP16_Proj_SP16_Proj_FK">
+<createdBy>brittkvanvig</createdBy>
+<createdTime>2016-04-26 00:49:23 UTC</createdTime>
+<generatorID>E33BF803-0173-5E85-B625-A8D5187B5D99</generatorID>
+<ownerDesignName>logical424</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="480DC9E5-591C-C515-058A-74979A408FF6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

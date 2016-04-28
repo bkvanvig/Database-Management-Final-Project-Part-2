@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="p2p2" directorySegmentName="seg_0" id="041F540D-D4A6-43F6-DEBC-22F99F37AE4B">
+<createdBy>brittkvanvig</createdBy>
+<createdTime>2016-04-23 22:40:26 UTC</createdTime>
+<ownerDesignName>logical425</ownerDesignName>
+<engineerTo>
+<item key="374F9E2D-B560-8F55-C095-0CF172DDE887" value="true"/>
+</engineerTo>
+<sourcePk>100A0BA1-66CE-75C0-3C23-3331A6EB28E3</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>AD963EBF-D29B-1224-C0D1-BEBADBE23216</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C8F7CE8C-F459-8B97-4C8D-66CE9C9E5B17</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
